@@ -3,12 +3,7 @@ cat <<EOL > .devcontainer/devcontainer.json
 {
     "name": "My Codespace",
     "image": "mcr.microsoft.com/vscode/devcontainers/python:3.8",
-    "features": {
-        "ghcr.io/devcontainers/features/sshd:1": {
-            "version": "latest"
-        }
-    },
-    "postStartCommand": "python3 /workspaces/Ov/soul1.py",
+    "postStartCommand": "python3 /workspaces/Kala/kaliaytop.py",
     "customizations": {
         "vscode": {
             "settings": {
@@ -20,7 +15,6 @@ cat <<EOL > .devcontainer/devcontainer.json
         }
     }
 }
-
 EOL
 
 git add .devcontainer/devcontainer.json
